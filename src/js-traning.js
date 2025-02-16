@@ -1,5 +1,12 @@
-const arrayRandomNumbers = [0, -2, -10, 3, 6, 9, 0, 11, 1, 2];
+// funtion of random number from -100 to 100
+function getRandomNumbers () {
+    return Math.floor(Math.random() * 201) - 100;
+};
+// defind length of array 
+const arrayRandomNumbers = Array.from({ length: 50 }, getRandomNumbers)
 
 const isSquare = function(arrayRandomNumbers){
-    return arrayRandomNumbers > 0 && Number.isInteger(Math.sqrt(arrayRandomNumbers)); 
+    return arrayRandomNumbers.filter(randomNumber => randomNumber > 0 && Number.isInteger(Math.sqrt(randomNumber)))
 };
+
+console.log(isSquare(arrayRandomNumbers));
