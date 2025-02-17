@@ -12,3 +12,10 @@ const isSquare = function(arrayRandomNumbers){
 
 // Show result in the console
 console.log(isSquare(arrayRandomNumbers));
+
+// cockroach task
+function cockroachSpeed(speed) {
+    return Math.floor(speed * 27.78)
+};
+
+console.log(cockroachSpeed(1.08))
