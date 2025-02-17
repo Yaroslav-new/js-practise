@@ -19,3 +19,12 @@ function cockroachSpeed(speed) {
 };
 
 console.log(cockroachSpeed(1.08))
+
+// an array of words that transfer into a sentence
+const words = ['hello', 'world', 'this', 'is', 'great']
+
+function smash (words) {
+    return words.join(' ');
+ };
+ 
+ console.log(smash(words));
