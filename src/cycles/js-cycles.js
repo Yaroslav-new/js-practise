@@ -8,7 +8,7 @@ const items = [
     { type: 'milk carton', material: 'paper', secondMaterial: 'plastic' }
   ];
 
-function recycle(array) {
+function recycleItems(array) {
     const container = {
       paper: [],
       glass: [],
@@ -25,7 +25,7 @@ function recycle(array) {
     return [container.paper, container.glass, container.organic, container.plastic];
   };
 
-console.log(recycle(items));
+console.log(recycleItems(items));
 
 // https://www.codewars.com/kata/59fb783bab11f89202001083
 
@@ -61,7 +61,7 @@ const meet = {
   'boss': 7
 };
 
-function outed(meet, boss){
+function meetingOutcome(meet, boss){
   let totaleppines = 0;
   for (let key in meet) {
     totaleppines +=meet[key];
