@@ -10,7 +10,7 @@ const arrayRandomNumbers = Array.from({ length: 50 }, getRandomNumbers)
 // const arrayA = [10, 5, 3, 0, 1, 2];
 
 function solution(arrayRandomNumbers) {
-    const numberSet = new Set(arrayA.filter(num => num > 0));
+    const numberSet = new Set(arrayRandomNumbers.filter(num => num > 0));
     let smallerNumber = 1;
     while (numberSet.has(smallerNumber)) {
         smallerNumber++;
