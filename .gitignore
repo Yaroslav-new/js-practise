@@ -16,3 +16,6 @@ node_modules/
 
 # OS 
 .DS_Store
+
+# some work file 
+work-folder
