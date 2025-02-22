@@ -5,7 +5,7 @@ function getRandomNumbers () {
 // defind length of array 
 const arrayRandomNumbers = Array.from({ length: 50 }, getRandomNumbers)
 
-// Logic 
+// Logic of finding an ideal Square
 const isSquare = function(arrayRandomNumbers){
     return arrayRandomNumbers.filter(randomNumber => randomNumber > 0 && Number.isInteger(Math.sqrt(randomNumber)))
 };
@@ -26,5 +26,5 @@ const words = ['hello', 'world', 'this', 'is', 'great']
 function smash (words) {
     return words.join(' ');
  };
- 
+
  console.log(smash(words));
