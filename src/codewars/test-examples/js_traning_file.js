@@ -1,4 +1,4 @@
-import { getRandomNumbers, arrayRandomNumbers } from './utils.js';
+import { getRandomNumbers, arrayRandomNumbers } from '../../utils.js';
 
 // Logic of finding an ideal Square
 const isSquare = function (arrayRandomNumbers) {
@@ -47,5 +47,3 @@ const isSquareTask3 = function (number) {
     let sqrt = Math.sqrt(number);
     return Number.isInteger(sqrt);
 };
-
-
