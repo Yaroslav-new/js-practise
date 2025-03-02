@@ -2,7 +2,13 @@ import { getRandomNumbers, arrayRandomNumbers } from '../../utils.js';
 
 // Logic of finding an ideal Square
 const isSquare = function (arrayRandomNumbers) {
-    return arrayRandomNumbers.filter(randomNumber => randomNumber > 0 && Number.isInteger(Math.sqrt(randomNumber)))
+    const result = [];
+    for (const number of arrayRandomNumbers) {
+        if (number > 0 && Number.isInteger(Math.sqrt(number))) {
+            result.push(number);
+        }
+    }
+    return result;
 };
 
 // Show result in the console
