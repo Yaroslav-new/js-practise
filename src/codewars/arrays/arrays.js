@@ -38,26 +38,38 @@ let task7Func = (arrOfPropertiesOfPeople) => {
         let maturity;
         switch (true) {
             case (age <= 1):
-                maturity = "baby"; 
+                maturity = "baby";
                 break;
             case (age <= 3):
                 maturity = "toddler";
                 break;
             case (age <= 5):
-                maturity = "preschooler"; 
+                maturity = "preschooler";
                 break;
             case (age <= 12):
-                maturity = "gradeschooler"; 
+                maturity = "gradeschooler";
                 break;
             case (age <= 18):
-                maturity = "teen"; 
+                maturity = "teen";
                 break;
             case (age <= 21):
-                maturity = "young adult"; 
+                maturity = "young adult";
                 break;
             default:
                 maturity = "adult";
         }
         return { age, maturity };
     });
+};
+
+// to get the sum of two array
+function arrayPlusArray(arr1, arr2) {
+    let sum = 0;
+    for (let i = 0; i < arr1.length; i++) {
+        sum += arr1[i]
+    }
+    for (let j = 0; j < arr2.length; j++) {
+        sum += arr2[j]
+    }
+    return sum;
 };
